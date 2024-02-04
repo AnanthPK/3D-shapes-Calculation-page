@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Shape Calculations</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.js">
+</head>
+<body>
+   <div class="row1">
+    
+    <!-- cube calculations -->
+        <center class="cube">
+        <img src="./image/Cube3dshape.png" alt=""><br>
+        <input class="cubefield" type="text" id="vol"><br>
+        <button onclick="myFun(vol)">Volume</button><br>
+
+        <button onclick="myFuncubecsa()">CSA</button><br>
+        <button onclick="myFuncubetsa()">TSA</button>
+
+        <h1 id="root"></h1>
+        
+
+        <script>
+            
+            function myFun(vol){
+                var a = document.getElementById("vol").value;
+                var c = a**3;
+                document.getElementById("root").innerHTML=c;
+            }
+            function myFuncubecsa(){
+                var a = document.getElementById("vol").value;
+                var b = 4*(a*a);
+                document.getElementById("root").innerHTML=b;
+            }
+            function myFuncubetsa(){
+                var a = document.getElementById("vol").value;
+                var d = 6*(a*a);
+                document.getElementById("root").innerHTML=d;
+            }
+            
+        </script>
+         </center>
+
+<!-- cuboid Calcualtions -->
+
+         <center class="cube">
+            <img src="./image/Cuboid3dshape.png" alt=""><br>
+            <input class="cubefield" type="text" id="vol1" placeholder="enter l value"><br>
+            <input class="cubefield" type="text" id="vol12" placeholder="enter b value"><br>
+            <input class="cubefield" type="text" id="vol13" placeholder="enter h value"><br>
+            <button onclick="myFun2()">Volume</button><br>
+            <button onclick="myFuncuboidcsa()">CSA</button><br>
+            <button onclick="myFuncuboidtsa()">TSA</button>
+    
+           
+            <h1 id="root1"></h1>
+    
+            <script>
+                
+                function myFun2(){
+                    var l = document.getElementById("vol1").value;
+                    var b = document.getElementById("vol12").value;
+                    var h = document.getElementById("vol13").value;
+                    var c = l*b*h;
+                    document.getElementById("root1").innerHTML=c;
+                }
+                function myFuncuboidcsa(){
+                    var l = Number ( document.getElementById("vol1").value);
+                    var b = Number (document.getElementById("vol12").value);
+                    var h = Number (document.getElementById("vol13").value);
+                    var e = 2*h*(l+b);
+                    document.getElementById("root1").innerHTML=e;
+                }
+                function myFuncuboidtsa(){
+                    var l = Number ( document.getElementById("vol1").value);
+                    var b = Number (document.getElementById("vol12").value);
+                    var h = Number (document.getElementById("vol13").value);
+                    var f = 2*((l*b)+(b*h)+(l*h));
+                    document.getElementById("root1").innerHTML=f;
+                }
+                
+            </script>
+             </center>
+
+    <!-- Right Circle Cylinder -->
+             <center class="cube">
+                <img src="./image/rightcylinder.png" alt=""><br>
+                <input class="cubefield" type="text" placeholder="Enter r value" id="vol2"><br>
+                <input class="cubefield" type="text" placeholder="Enter h value" id="vol21"><br>
+                <button onclick="myFun3()">Volume</button><br>
+        <!-- 
+                <input type="text" id="vol1"> -->
+                <button onclick="myFunrcccsa()">CSA</button><br>
+                <button onclick="myFunrcctsa()">TSA</button>
+        
+                
+                <h1 id="root2"></h1>
+        
+                <script>
+                    
+                    function myFun3(){
+                        var r = Number (document.getElementById("vol2").value);
+                        var h = Number (document.getElementById("vol21").value);
+                        var c = 3.14*r*r*h;
+                        document.getElementById("root2").innerHTML=c;
+                    }
+                    function myFunrcccsa(){
+                        var r = Number (document.getElementById("vol2").value);
+                        var h = Number (document.getElementById("vol21").value) ;
+                        var b = 2*3.14*r*h;
+                        document.getElementById("root2").innerHTML=b;
+                    }
+                    function myFunrcctsa(){
+                        var r = Number (document.getElementById("vol2").value);
+                        var h = Number (document.getElementById("vol21").value);
+                        var d = 2*3.14*r*(r+h);
+                        document.getElementById("root2").innerHTML=d;
+                    }
+                    
+                </script>
+                 </center>
+
+        </div>
+
+        <!-- second row -->
+
+        <div class="row2">
+
+             <!-- Right Circular Cone -->
+
+        <center class="cube">
+            <img src="./image/RightCircularCone.png" alt=""><br>
+            <input class="cubefield" type="text" id="vol4" placeholder="Enter r value"><br>
+            <input class="cubefield" type="text" id="vol41" placeholder="Enter l value"><br>
+            <input class="cubefield" type="text" id="vol42" placeholder="Enter h value"><br>
+            <button onclick="myFun4()">Volume</button><br>
+    
+            <button onclick="myFunrcconecsa()">CSA</button><br>
+            <button onclick="myFunrcconetsa()">TSA</button>
+    
+            <h1 id="root4"></h1>
+            
+    
+            <script>
+                
+                function myFun4(){
+                    var r = Number( document.getElementById("vol4").value);
+                    var l = Number( document.getElementById("vol41").value);
+                    var h = Number( document.getElementById("vol42").value);
+                    var c = 0.3*3.14*r*r*h;
+                    document.getElementById("root4").innerHTML=c;
+                }
+                function myFunrcconecsa(){
+                    var r = Number( document.getElementById("vol4").value);
+                    var l = Number( document.getElementById("vol41").value);
+                    var h = Number( document.getElementById("vol42").value);
+                    var b = 3.14*r*l;
+                    document.getElementById("root4").innerHTML=b;
+                }
+                function myFunrcconetsa(){
+                    var r = Number( document.getElementById("vol4").value);
+                    var l = Number( document.getElementById("vol41").value);
+                    var h = Number( document.getElementById("vol42").value);
+                    var d = 3.14*r*(l + r);
+                    document.getElementById("root4").innerHTML=d;
+                }
+                
+            </script>
+             </center>
+    
+    <!-- Sphere -->
+    
+             <center class="cube">
+                <img src="./image/speare.png" alt=""><br>
+                <input class="cubefield" type="text" id="vol5" placeholder="enter r value"><br>
+        
+                <button onclick="myFun5()">Volume</button><br>
+                <!-- <button onclick="myFunspherecsa()">CSA</button><br> -->
+                <button onclick="myFunspheretsa()">TSA</button>
+        
+               
+                <h1 id="root5"></h1>
+        
+                <script>
+                    
+                    function myFun5(){
+                        var r = document.getElementById("vol5").value;
+                       
+                        var c = (4/3)*3.14*r**3;
+                        document.getElementById("root5").innerHTML=c;
+                    }
+                    // function myFunspherecsa(){
+                    //     var r = Number ( document.getElementById("vol5").value);
+                       
+                    //     var e = 2*h*(l+b);
+                    //     document.getElementById("root1").innerHTML=e;
+                    // }
+                    function myFunspheretsa(){
+                        var r = Number ( document.getElementById("vol5").value);
+                        
+                        var f = 4*3.14*r**2;
+                        document.getElementById("root5").innerHTML=f;
+                    }
+                    
+                </script>
+                 </center>
+    
+        <!-- Semi Sphere -->
+                 <center class="cube">
+                    <img src="./image/SemiSphere.png" alt=""><br>
+                    <input class="cubefield" type="text" placeholder="Enter r value" id="vol6"><br>
+                   
+                    <button onclick="myFun6()">Volume</button><br>
+            <!-- 
+                    <input type="text" id="vol1"> -->
+                    <button onclick="myFunhemiscsa()">CSA</button><br>
+                    <button onclick="myFunhemistsa()">TSA</button>
+            
+                    
+                    <h1 id="root6"></h1>
+            
+                    <script>
+                        
+                        function myFun6(){
+                            var r = Number (document.getElementById("vol6").value);
+                            
+                            var c = (2/3)*3.14*r**3;
+                            document.getElementById("root6").innerHTML=c;
+                        }
+                        function myFunhemiscsa(){
+                            var r = Number (document.getElementById("vol6").value);
+                           
+                            var b = 2*3.14*r**2;
+                            document.getElementById("root6").innerHTML=b;
+                        }
+                        function myFunhemistsa(){
+                            var r = Number (document.getElementById("vol6").value);
+                           
+                            var d = 3*3.14*r**2;
+                            document.getElementById("root6").innerHTML=d;
+                        }
+                        
+                    </script>
+                     </center>
+
+
+        </div>
+       
+</html>
