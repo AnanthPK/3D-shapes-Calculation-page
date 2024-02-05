@@ -1,3 +1,6 @@
+h1{
+    font-size: 22px;
+}
 .row1{
     display: flex;
     background-color: beige;

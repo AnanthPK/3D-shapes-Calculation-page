@@ -22,23 +22,27 @@
 
         <h1 id="root"></h1>
         
+        
 
         <script>
             
             function myFun(vol){
                 var a = document.getElementById("vol").value;
                 var c = a**3;
-                document.getElementById("root").innerHTML=c;
+                var ans = "Volume Of Cube is " + c ;
+                document.getElementById("root").innerHTML=ans;
             }
             function myFuncubecsa(){
                 var a = document.getElementById("vol").value;
                 var b = 4*(a*a);
-                document.getElementById("root").innerHTML=b;
+                var ans = "Curved Surface area Of Cube is " + b ;
+                document.getElementById("root").innerHTML=ans;
             }
             function myFuncubetsa(){
                 var a = document.getElementById("vol").value;
                 var d = 6*(a*a);
-                document.getElementById("root").innerHTML=d;
+                var ans = "Total Surface area Of Cube is " + d ;
+                document.getElementById("root").innerHTML=ans;
             }
             
         </script>
@@ -65,21 +69,24 @@
                     var b = document.getElementById("vol12").value;
                     var h = document.getElementById("vol13").value;
                     var c = l*b*h;
-                    document.getElementById("root1").innerHTML=c;
+                    var ans = "Cuboid Volume is "+ c;
+                    document.getElementById("root1").innerHTML=ans;
                 }
                 function myFuncuboidcsa(){
                     var l = Number ( document.getElementById("vol1").value);
                     var b = Number (document.getElementById("vol12").value);
                     var h = Number (document.getElementById("vol13").value);
                     var e = 2*h*(l+b);
-                    document.getElementById("root1").innerHTML=e;
+                    var ans = "Cuboid Curved Surface area is " + e
+                    document.getElementById("root1").innerHTML=ans;
                 }
                 function myFuncuboidtsa(){
                     var l = Number ( document.getElementById("vol1").value);
                     var b = Number (document.getElementById("vol12").value);
                     var h = Number (document.getElementById("vol13").value);
                     var f = 2*((l*b)+(b*h)+(l*h));
-                    document.getElementById("root1").innerHTML=f;
+                    var ans = "Cuboid Total Surface area is " + f;
+                    document.getElementById("root1").innerHTML=ans;
                 }
                 
             </script>
@@ -105,19 +112,22 @@
                         var r = Number (document.getElementById("vol2").value);
                         var h = Number (document.getElementById("vol21").value);
                         var c = 3.14*r*r*h;
-                        document.getElementById("root2").innerHTML=c;
+                        var ans = "Right Circle Cylinder Volume is " + c;
+                        document.getElementById("root2").innerHTML=ans;
                     }
                     function myFunrcccsa(){
                         var r = Number (document.getElementById("vol2").value);
                         var h = Number (document.getElementById("vol21").value) ;
                         var b = 2*3.14*r*h;
-                        document.getElementById("root2").innerHTML=b;
+                        var ans = "Right Circle Cylinder CSA is " + b;
+                        document.getElementById("root2").innerHTML=ans;
                     }
                     function myFunrcctsa(){
                         var r = Number (document.getElementById("vol2").value);
                         var h = Number (document.getElementById("vol21").value);
                         var d = 2*3.14*r*(r+h);
-                        document.getElementById("root2").innerHTML=d;
+                        var ans = "Right Circle Cylinder TSA is " + d;
+                        document.getElementById("root2").innerHTML=ans;
                     }
                     
                 </script>
@@ -129,7 +139,7 @@
 
         <div class="row2">
 
-             <!-- Right Circular Cone -->
+     <!-- Right Circular Cone -->
 
         <center class="cube">
             <img src="./image/RightCircularCone.png" alt=""><br>
@@ -151,21 +161,24 @@
                     var l = Number( document.getElementById("vol41").value);
                     var h = Number( document.getElementById("vol42").value);
                     var c = 0.3*3.14*r*r*h;
-                    document.getElementById("root4").innerHTML=c;
+                    var ans = "Right Circular Cone Volume is " + c;
+                    document.getElementById("root4").innerHTML=ans;
                 }
                 function myFunrcconecsa(){
                     var r = Number( document.getElementById("vol4").value);
                     var l = Number( document.getElementById("vol41").value);
                     var h = Number( document.getElementById("vol42").value);
                     var b = 3.14*r*l;
-                    document.getElementById("root4").innerHTML=b;
+                    var ans = "Right Circular Cone CSA is " + b;
+                    document.getElementById("root4").innerHTML=ans;
                 }
                 function myFunrcconetsa(){
                     var r = Number( document.getElementById("vol4").value);
                     var l = Number( document.getElementById("vol41").value);
                     var h = Number( document.getElementById("vol42").value);
                     var d = 3.14*r*(l + r);
-                    document.getElementById("root4").innerHTML=d;
+                    var ans = "Right Circular Cone TSA is " + d;
+                    document.getElementById("root4").innerHTML=ans;
                 }
                 
             </script>
@@ -190,7 +203,8 @@
                         var r = document.getElementById("vol5").value;
                        
                         var c = (4/3)*3.14*r**3;
-                        document.getElementById("root5").innerHTML=c;
+                        var ans = "Sphere Volume is " + c;
+                        document.getElementById("root5").innerHTML=ans;
                     }
                     // function myFunspherecsa(){
                     //     var r = Number ( document.getElementById("vol5").value);
@@ -202,7 +216,8 @@
                         var r = Number ( document.getElementById("vol5").value);
                         
                         var f = 4*3.14*r**2;
-                        document.getElementById("root5").innerHTML=f;
+                        var ans = "Sphere CSA is " + f;
+                        document.getElementById("root5").innerHTML=ans;
                     }
                     
                 </script>
@@ -228,19 +243,22 @@
                             var r = Number (document.getElementById("vol6").value);
                             
                             var c = (2/3)*3.14*r**3;
-                            document.getElementById("root6").innerHTML=c;
+                            var ans = "Semi Sphere Volume is " + c;
+                            document.getElementById("root6").innerHTML=ans;
                         }
                         function myFunhemiscsa(){
                             var r = Number (document.getElementById("vol6").value);
                            
                             var b = 2*3.14*r**2;
-                            document.getElementById("root6").innerHTML=b;
+                            var ans = "Semi Sphere CSA is " + b;
+                            document.getElementById("root6").innerHTML=ans;
                         }
                         function myFunhemistsa(){
                             var r = Number (document.getElementById("vol6").value);
                            
                             var d = 3*3.14*r**2;
-                            document.getElementById("root6").innerHTML=d;
+                            var ans = "Semi Sphere TSA is " + d;
+                            document.getElementById("root6").innerHTML=ans;
                         }
                         
                     </script>
