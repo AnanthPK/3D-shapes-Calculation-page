@@ -1,10 +1,11 @@
 h1{
     font-size: 22px;
 }
-.row1{
+.firstRow{
     display: flex;
-    background-color: beige;
+    background-image: linear-gradient(to right, #0ccda3, #0ccda380, #c1fcd3);
     padding-bottom: 70px;
+    padding-top: 70px;
     justify-content: center;
     
 }
@@ -21,17 +22,17 @@ h1{
     border: solid 2px;
     margin: 5px;
 }
-.row1 img{
-    width: 350px;
+.firstRow img{
+    width: 300px;
 }
 
-.row2{
+.secondRow{
     display: flex;
-    background-color: beige;
+    background-image: linear-gradient(to right, #0ccda3, #0ccda380, #c1fcd3);
     padding-bottom: 70px;
     justify-content: center;
 
 }
-.row2 img{
-    width: 350px;
+.secondRow img{
+    width: 300px;
 }
