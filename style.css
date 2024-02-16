@@ -1,11 +1,26 @@
 h1{
     font-size: 22px;
 }
+h2{
+    color: rgb(94, 94, 43);
+}
+
+.overAllbg{
+    background-image: linear-gradient(to right, #0ccda3, #07927480, #acf0c0);
+}
+
+.title{
+    padding-top: 50px ;
+    
+}
+.mainImg img{
+    width: 100px;
+}
 .firstRow{
     display: flex;
-    background-image: linear-gradient(to right, #0ccda3, #0ccda380, #c1fcd3);
-    padding-bottom: 70px;
-    padding-top: 70px;
+    /* background-image: linear-gradient(to right, #0ccda3, #0ccda380, #c1fcd3);
+    padding-bottom: 70px; */
+    padding: 70px 0px;
     justify-content: center;
     
 }
@@ -28,7 +43,7 @@ h1{
 
 .secondRow{
     display: flex;
-    background-image: linear-gradient(to right, #0ccda3, #0ccda380, #c1fcd3);
+    /* background-image: linear-gradient(to right, #0ccda3, #0ccda380, #c1fcd3); */
     padding-bottom: 70px;
     justify-content: center;
 
